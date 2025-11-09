@@ -99,20 +99,3 @@ console.log(executeWork(createEmployee(200)));
 console.log(executeWork(createEmployee(1000)));
 
 
-// Task 7: 
-type Subjects = 'Math' | 'History';
-
-function teachClass(todayClass: Subjects): string {
-  if (todayClass === 'Math') {
-    return 'Teaching Math';
-  } else {
-    return 'Teaching History';
-  }
-}
-
-// Test the teachClass function
-console.log(teachClass('Math'));
-// Expected: Teaching Math
-
-console.log(teachClass('History'));
-// Expected: Teaching History
