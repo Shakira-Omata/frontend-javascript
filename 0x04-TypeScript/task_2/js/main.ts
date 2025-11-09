@@ -79,12 +79,12 @@ if (employee2 instanceof Director) {
   console.log(employee2.workDirectorTasks()); // Getting to director tasks
 }
 
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
   return employee instanceof Director;
 }
 
 // Task 6: 
-function executeWork(employee: Director | Teacher): string {
+export function executeWork(employee: Director | Teacher): string {
   if (isDirector(employee)) {
     return employee.workDirectorTasks();
   } else {
